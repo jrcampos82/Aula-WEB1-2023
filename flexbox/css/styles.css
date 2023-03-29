@@ -1,4 +1,5 @@
 
+
 * {
   margin: 0;
   padding: 0;
@@ -25,17 +26,24 @@ html {
   /* flex-wrap: wrap; */
   /* flex-direction: row; */
   justify-content: center;
-  align-items: center;
-  /* flex-flow: column wrap; */
+  /* align-items: center; */
+
 }
 
 
 
 .flex-item {
+  
   font-size: 2rem;
   /* width: 20rem; */
   height: 20rem;
   color: #fff;
+  flex-basis: 50rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  
+
 }
 
 
