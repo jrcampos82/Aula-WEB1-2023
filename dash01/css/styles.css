@@ -20,21 +20,21 @@ html {
   margin: 0 auto;
 }
 
-#header {
+.container #header {
   /* border: .2rem solid blue; */
   width: 100%;
   height: 8rem;
   background: rgb(148, 148, 249);
 }
 
-#nav {
+.container #nav {
   /* border: .2rem solid black; */
   width: 100%;
   height: 5rem;
   background: #ccc;
 }
 
-.content {
+.container .content {
   /* border: .2rem solid rgba(83, 255, 146, 0.39); */
   width: 100%;
   height: calc(100vh - 13.1rem);
@@ -43,21 +43,21 @@ html {
 
 
 
-#aside {
+.container .content #aside {
   height: 100%;
   width: 10rem;
   /* border: .2rem solid blueviolet; */
   background:rgb(203, 148, 249);
 }
 
-#sec1 {
+.container .content #sec1 {
   height: 100%;
   width: 30rem;
   /* border: .2rem solid blueviolet; */
   background:rgba(83, 255, 146, 0.39);
 }
 
-#main {
+.container .content #main {
   height: 100%;
   width: calc(100% - 40rem);
   /* border: .2rem solid rgb(226, 43, 195); */
