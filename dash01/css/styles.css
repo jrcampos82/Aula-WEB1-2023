@@ -345,7 +345,8 @@ h3 {
 
 .container .content #main .cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-right: 2rem;
 }
 
 .container .content #main .card1 {
@@ -532,5 +533,110 @@ h3 {
 #nav .nav-r button:nth-child(3) > i {
   margin-left: .8rem;
   /* font-size: 1.5rem; */
+}
+
+#main .title {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 2rem 2rem 0;
+}
+
+#main .title .div {
+  display: flex;
+  align-items: center;
+
+}
+
+#main .title .div button {
+  width: 2rem;
+  height: 1.7rem;
+  border: none;
+  background: #FFFFFF;
+  border-radius: .5rem;
+}
+
+#main .title .div i {
+  font-size: 2rem;
+}
+
+
+
+#main .title .div span {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.progress img {
+  width: 100%;
+}
+
+#main .cards-equipe .card-files {
+  height: 8rem;
+}
+
+#main .cards-equipe {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+}
+
+#main .card {
+  background: #fff;
+  width: 28rem;
+  height: 12rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+#main .card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main .card div span {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-left: .8rem;
+}
+
+#main .card > div img {
+  width: 3rem;
+}
+
+#main .card > div .folder {
+  font-size: 4rem;
+  color: #7B95F2;
+}
+
+#main .card > div .dots {
+  font-size: 2rem;
+  
+}
+
+#main .card .span {
+  font-size: 1.1rem;
+  margin-top: .2rem;
+  color: var(--shadow-color);
+}
+
+#main .card .team .team-files {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid tomato;
+}
+
+#main .card .team img {
+  width: 8rem;
+}
+
+#main .table {
+  background: rgb(255, 255, 255);
+  width: 98%;
+  height: 30rem;
+  margin: 2rem 2rem 2rem 0;
+  border-radius: 1rem;
+  box-shadow: .2rem .2rem .5rem var(--shadow-color);
 }
 
