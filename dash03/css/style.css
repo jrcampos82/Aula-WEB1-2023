@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  --bg-primary: #fff;
+  --bg-button: #3767eb;
+  --bg-notify: #f23435;
+  --bg-shop: #22749e;
+  --bg-success: #ccf0d0;
+  --bg-section: #f7f9fa;
+  --shadow: #ddd;
+  --primary-text: #888;
+}
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  margin: 0 auto;
+  /* border: 2px solid tomato; */
+  width: 80vw;
+  height: 100vh;
+  box-shadow: 1rem 1rem 2rem var(--shadow);
+  display: grid;
+  grid-template-rows: 7rem 16rem 1fr 6rem;
+}
+
+/* header,
+section,
+main,
+footer {
+  border: 2px solid black;
+} */
+
+header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+header .h-esq {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  padding-left: 6rem;
+}
+
+header .h-esq .input {
+  border: 1px solid #696969;
+  display: grid;
+  grid-template-columns: 1fr 5rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+header .h-esq .input input {
+  outline: none;
+}
+header .h-esq .input div {
+  background: #3767eb;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+header .h-esq .input i {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+/* main div {
+  border: 1px solid black;
+} */
+
+header .h-dir {
+  display: grid;
+  grid-template-columns: 7rem 7rem auto;
+  justify-content: end;
+  align-items: center;
+}
+
+header .h-dir .cart,
+header .h-dir .user {
+  border-radius: 50%;
+  border: 0.1rem solid var(--shadow);
+  width: 5rem;
+  height: 5rem;
+  color: var(--primary-text);
+  font-size: 2.7rem;
+  /* text-align: center; */
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+header .h-dir .cart .notify {
+  background: var(--bg-notify);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  color: #fff;
+  position: absolute;
+  top: -0.4rem;
+  right: -0.4rem;
+  text-align: center;
+}
+
+header .h-dir .signin {
+  margin-right: 5rem;
+}
+
+section {
+  background: var(--bg-section);
+  border-top: 0.1rem solid var(--shadow);
+  display: grid;
+  align-items: center;
+}
+
+section h1 {
+  font-weight: 500;
+  font-size: 3rem;
+
+  padding-left: 6rem;
+}
+
+main .list {
+  border: 0.1rem solid var(--shadow);
+  margin-left: 6rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 5rem;
+}
+
+main .list .button {
+  display: grid;
+  grid-template-columns: 15rem 13rem;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+main .list .button button {
+  height: 4.5rem;
+  border-radius: 0.7rem;
+  background: none;
+  cursor: pointer;
+}
+
+main .list .button button:nth-child(1) {
+  border: 0.1rem solid var(--shadow);
+  color: var(--primary-text);
+  width: 15rem;
+}
+main .list .button button:nth-child(2) {
+  background: var(--bg-button);
+  color: #fff;
+  width: 13rem;
+}
