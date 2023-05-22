@@ -1,1 +1,41 @@
-Bem vindo! Boa noite!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pie Chart</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        border-radius: 50%;
+        padding: 5px;
+        background: 
+          linear-gradient(#ccc, #ccc) content-box,
+          linear-gradient(var(--v), #f2f2f2 50%, transparent 0),
+          linear-gradient(to right, #f2f2f2 50%, blue 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" style="--v: 90deg"></div>
+    <!-- 0% -->
+    <div class="box" style="--v: -45deg"></div>
+    <!-- 12.5% -->
+    <div class="box" style="--v: 0deg"></div>
+    <!-- 25% -->
+    <div class="box" style="--v: 45deg"></div>
+    <!-- 37.5% -->
+    <div class="box" style="--v: 90deg"></div>
+    <!-- 50% -->
+
+    <p>
+      The formula is [p = (18/5) * x - 90].
+      <small>Where x is the percentage and p the degree</small>
+    </p>
+    <p>for x = 5% --> p = -72deg</p>
+    <div class="box" style="--v: -72deg"></div>
+  </body>
+</html>
